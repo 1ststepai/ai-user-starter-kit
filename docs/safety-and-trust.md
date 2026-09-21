@@ -4,6 +4,8 @@ title: Safety and trust
 
 # Safety and trust
 
+_Last reviewed: September 2026._
+
 Treat every model like a fast, overconfident junior teammate. Helpful. Not in charge.
 
 If you remember one line from this page: **agent output is a draft until you understand it.**
@@ -83,4 +85,4 @@ That is enough. You do not need a perfect setup, a paid stack, or a community to
 
 ---
 
-[Kit home](index.md) · [Starter map](starter-map.md) · [Playbook](first-week-playbook.md) · [Hygiene](usage-hygiene.md)
+[Kit home](index.md) · [Starter map](starter-map.md) · [Playbook](first-week-playbook.md) · [Hygiene](usage-hygiene.md) · [What’s updated](CHANGELOG.md)

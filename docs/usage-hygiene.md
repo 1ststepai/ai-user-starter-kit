@@ -4,6 +4,8 @@ title: Usage hygiene
 
 # Usage hygiene
 
+_Last reviewed: September 2026._
+
 AI tools cost something — money, a monthly quota, or both. That is normal. This page is about staying aware, not about being afraid of a progress bar.
 
 You do not need to optimize spend in week one. You do need a few habits so a curious afternoon does not become a mess.
@@ -89,4 +91,4 @@ Read [safety and trust](safety-and-trust.md) for the “can I believe this?” h
 
 ---
 
-[Kit home](index.md) · [Starter map](starter-map.md) · [Playbook](first-week-playbook.md) · [Safety](safety-and-trust.md)
+[Kit home](index.md) · [Starter map](starter-map.md) · [Playbook](first-week-playbook.md) · [Safety](safety-and-trust.md) · [What’s updated](CHANGELOG.md)

@@ -82,15 +82,26 @@
     <h2>What’s inside</h2>
     <p>Four short pages. Read them in order, or jump to the one you need.</p>
     <ol>
-      <li><strong><a href="docs/starter-map.md">Starter map</a></strong> — chat vs IDE agent vs terminal agent vs image, in plain English. Pick one primary tool and learn it for a week.</li>
+      <li><strong><a href="docs/starter-map.md">Starter map</a></strong> — chat vs IDE agent vs terminal agent vs image. Categories first; brand names are examples as of a month.</li>
       <li><strong><a href="docs/first-week-playbook.md">First-week playbook</a></strong> — one small project, better prompts, when to read the diff, when to restart the chat.</li>
       <li><strong><a href="docs/usage-hygiene.md">Usage hygiene</a></strong> — tokens and cost without the scare story; secrets; production; verify before you commit.</li>
       <li><strong><a href="docs/safety-and-trust.md">Safety and trust</a></strong> — models invent things; never paste API keys; review changes; treat output as a draft.</li>
     </ol>
     <p>You do not need prior jargon. Where we use a term (<code>diff</code>, <code>agent</code>, <code>tokens</code>), the page defines it once.</p>
 
+    <h2>Living kit</h2>
+    <p>This is versioned markdown we update as tools and models change — not a one-shot PDF that goes stale.</p>
+    <p>Each major guide has a <strong>Last reviewed</strong> date. Brand names are examples as of that month, not a forever endorsement list.</p>
+    <p>If a tool name looks wrong, <a href="https://github.com/1ststepai/ai-user-starter-kit/issues">open an issue</a> or a small PR. See <a href="docs/CHANGELOG.md">What’s updated</a>.</p>
+
+    <h2>Keep it current</h2>
+    <p>Tool categories and dated examples live in <a href="data/catalog.json"><code>data/catalog.json</code></a>. When 1stStep publishes a newer catalog on <code>main</code>, pull it with one command (Python 3, no packages):</p>
+    <p><code>python3 scripts/update-kit.py</code></p>
+    <p>That fetches only this repo’s GitHub raw catalog, overwrites the local file if newer, refreshes the starter-map example table, and prints what changed.</p>
+    <p><strong>Publish path for 1stStep:</strong> edit <code>data/catalog.json</code> on <code>main</code>, bump <code>version</code> and <code>updatedAt</code>, run <code>python3 scripts/update-kit.py --local</code>, add a line to <code>docs/CHANGELOG.md</code>. Future: richer sources. v1 does not scrape vendor docs.</p>
+
     <h2>Who this is for</h2>
-    <p>You installed Cursor, Claude Code, Codex, ChatGPT, Gemini, or something like them, and you want a calm first week — not a feed of “must-use” extensions.</p>
+    <p>You installed a chat, an IDE agent, a terminal agent, or something like them, and you want a calm first week — not a feed of “must-use” extensions.</p>
     <p>This kit is not a product pitch, a course, or a reason to hire anyone. It is a map and a practice loop.</p>
 
     <h2>How to start (10 minutes)</h2>
@@ -100,6 +111,10 @@
       <li>Follow <a href="docs/first-week-playbook.md">day 1</a> — a “hello” you can open without the AI.</li>
       <li>Keep <a href="docs/usage-hygiene.md">hygiene</a> and <a href="docs/safety-and-trust.md">safety</a> nearby when you touch keys or git.</li>
     </ol>
+
+    <h2>What’s updated</h2>
+    <p>Latest: <strong>1.0.0</strong> (21 September 2026) — first public kit + catalog v1.</p>
+    <p>Full list: <a href="docs/CHANGELOG.md">docs/CHANGELOG.md</a>.</p>
 
     <h2>GitHub Pages</h2>
     <p>This repo is ready to publish as static docs.</p>
@@ -113,14 +128,15 @@
     <div class="card">
       <h3>Optional: CodeFriends</h3>
       <p>If you want company while you learn — not a class, not a paywall — <a href="https://github.com/1ststepai/codefriends">CodeFriends</a> is a small, optional community for people figuring this out together.</p>
-      <p>The live invite URL may be added later. Until then, that repo is the placeholder. You do not need to join to use this kit.</p>
+      <p>What people ask there is the feedback loop that keeps this kit honest: questions in → catalog and guides update. You do not need to join to use the kit.</p>
+      <p>The live invite URL may be added later. Until then, that repo is the placeholder.</p>
       <p>1stStep.ai builds this kit and hosts the community invite.</p>
     </div>
 
     <div class="card">
       <h3>Optional: Auto Model Router</h3>
       <p>Skip this until week one is done.</p>
-      <p>If you later start optimizing spend across Cursor, Claude Code, Codex, and similar tools, <a href="https://github.com/1ststepai/auto-model-router">Auto Model Router</a> is an open, confirm-before-run routing skill. It does not replace Cursor Auto, and we do not claim it beats any vendor picker.</p>
+      <p>If you later start optimizing spend across IDE agents, terminal agents, and similar tools, <a href="https://github.com/1ststepai/auto-model-router">Auto Model Router</a> is an open, confirm-before-run routing skill. It does not replace Cursor Auto, and we do not claim it beats any vendor picker.</p>
     </div>
 
     <footer>

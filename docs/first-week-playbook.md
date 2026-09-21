@@ -4,6 +4,8 @@ title: First-week playbook
 
 # First-week playbook
 
+_Last reviewed: September 2026._
+
 Goal for the week: finish **one small project** you understand well enough to change without the AI.
 
 Not a startup. Not a rewrite of your job. A practice project you can throw away.
@@ -152,4 +154,4 @@ Read [usage hygiene](usage-hygiene.md) before you point an agent at anything you
 
 ---
 
-[Kit home](index.md) · [Starter map](starter-map.md) · [Hygiene](usage-hygiene.md) · [Safety](safety-and-trust.md)
+[Kit home](index.md) · [Starter map](starter-map.md) · [Hygiene](usage-hygiene.md) · [Safety](safety-and-trust.md) · [What’s updated](CHANGELOG.md)
