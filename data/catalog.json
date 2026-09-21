@@ -1,0 +1,42 @@
+{
+  "version": "1.0.0",
+  "updatedAt": "2026-09-21",
+  "asOf": "September 2026",
+  "source": "1stStep.ai published catalog",
+  "future": "Richer sources may land later. v1 only ships this file — no scraping of vendor docs.",
+  "notes": "Categories are the stable map. Brand names are examples as of asOf, not endorsements and not a forever list.",
+  "categories": [
+    {
+      "id": "chat",
+      "name": "Chat",
+      "job": "Think and draft",
+      "goodFor": "Explaining an idea, outlining a plan, rewriting a paragraph, asking what an error means, practicing prompts.",
+      "notGoodFor": "Editing the files in your real project by itself. You will copy and paste. That is fine in week one.",
+      "examples": ["ChatGPT", "Claude.ai", "Gemini"]
+    },
+    {
+      "id": "ide-agent",
+      "name": "IDE agent",
+      "job": "Edit the project in front of you",
+      "goodFor": "Changing files you can see, showing a diff, working in the same window as your code.",
+      "notGoodFor": "Blindly accepting a huge rewrite you have not read.",
+      "examples": ["Cursor", "other editors with a built-in agent"]
+    },
+    {
+      "id": "terminal-agent",
+      "name": "Terminal agent",
+      "job": "Run commands where you already work",
+      "goodFor": "People comfortable in a terminal who want the AI to run tests, inspect files, and propose git commands.",
+      "notGoodFor": "Week one if the terminal still feels like a dark room. You can come back to this.",
+      "examples": ["Claude Code", "Codex", "similar command-line agents"]
+    },
+    {
+      "id": "image",
+      "name": "Image",
+      "job": "Pictures, not programs",
+      "goodFor": "A rough logo, a layout sketch, a diagram of how the pieces connect.",
+      "notGoodFor": "Producing the actual app. Use the picture as a reference, then build in chat or an editor.",
+      "examples": ["image modes in ChatGPT", "Gemini", "similar image tools"]
+    }
+  ]
+}
