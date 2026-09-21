@@ -25,13 +25,15 @@ The [GitHub README](https://github.com/1ststepai/ai-user-starter-kit) is the sam
 
 ## Living kit
 
-Versioned markdown. We update it as tools change. Each major page has a **Last reviewed** date. Stale names? [Open an issue](https://github.com/1ststepai/ai-user-starter-kit/issues). See [What’s updated](CHANGELOG.md).
+The guides stay markdown. The tool map is a published catalog you can pull again later — not a frozen PDF.
 
-To pull a newer published catalog from `main`:
+Each major page has a **Last reviewed** date. Stale names? [Open an issue](https://github.com/1ststepai/ai-user-starter-kit/issues). See [What’s updated](CHANGELOG.md).
 
 ```bash
 python3 scripts/update-kit.py
 ```
+
+1stStep updates `data/catalog.json` on `main`. That command fetches it (this repo’s GitHub raw only) and refreshes the starter-map examples.
 
 ## How to use this
 

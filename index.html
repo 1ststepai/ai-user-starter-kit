@@ -90,15 +90,16 @@
     <p>You do not need prior jargon. Where we use a term (<code>diff</code>, <code>agent</code>, <code>tokens</code>), the page defines it once.</p>
 
     <h2>Living kit</h2>
-    <p>This is versioned markdown we update as tools and models change — not a one-shot PDF that goes stale.</p>
-    <p>Each major guide has a <strong>Last reviewed</strong> date. Brand names are examples as of that month, not a forever endorsement list.</p>
-    <p>If a tool name looks wrong, <a href="https://github.com/1ststepai/ai-user-starter-kit/issues">open an issue</a> or a small PR. See <a href="docs/CHANGELOG.md">What’s updated</a>.</p>
+    <p>The guides stay readable markdown. The <strong>tool map</strong> updates itself from a published catalog — not a PDF you wait on, and not a changelog you have to remember.</p>
+    <p>Categories and dated brand examples live in <a href="data/catalog.json"><code>data/catalog.json</code></a>. When that file changes on <code>main</code>, one command pulls it onto your clone and refreshes the starter map.</p>
+    <p>Each major guide also shows a <strong>Last reviewed</strong> date. If a name looks wrong, <a href="https://github.com/1ststepai/ai-user-starter-kit/issues">open an issue</a> or a small PR.</p>
 
     <h2>Keep it current</h2>
-    <p>Tool categories and dated examples live in <a href="data/catalog.json"><code>data/catalog.json</code></a>. When 1stStep publishes a newer catalog on <code>main</code>, pull it with one command (Python 3, no packages):</p>
     <p><code>python3 scripts/update-kit.py</code></p>
-    <p>That fetches only this repo’s GitHub raw catalog, overwrites the local file if newer, refreshes the starter-map example table, and prints what changed.</p>
-    <p><strong>Publish path for 1stStep:</strong> edit <code>data/catalog.json</code> on <code>main</code>, bump <code>version</code> and <code>updatedAt</code>, run <code>python3 scripts/update-kit.py --local</code>, add a line to <code>docs/CHANGELOG.md</code>. Future: richer sources. v1 does not scrape vendor docs.</p>
+    <p>Python 3 only. No packages. No account.</p>
+    <p>That fetches this repo’s catalog from GitHub raw (<code>main</code>), overwrites local <code>data/catalog.json</code> if remote <code>version</code> / <code>updatedAt</code> is newer, rewrites the starter-map example table, and prints what changed. It will not call any other host.</p>
+    <p>You will know it worked when the command prints the remote version and either <code>Updated data/catalog.json</code> or <code>No newer catalog; keeping local</code>.</p>
+    <p><strong>Publish path for 1stStep:</strong> when tools or models change, edit <code>data/catalog.json</code> on <code>main</code>, bump <code>version</code> and <code>updatedAt</code>, run <code>python3 scripts/update-kit.py --local</code>, add a line to <a href="docs/CHANGELOG.md">docs/CHANGELOG.md</a>. Everyone who runs the command later gets the new map. Future: richer sources. v1 does not scrape vendor docs.</p>
 
     <h2>Who this is for</h2>
     <p>You installed a chat, an IDE agent, a terminal agent, or something like them, and you want a calm first week — not a feed of “must-use” extensions.</p>
@@ -111,6 +112,7 @@
       <li>Follow <a href="docs/first-week-playbook.md">day 1</a> — a “hello” you can open without the AI.</li>
       <li>Keep <a href="docs/usage-hygiene.md">hygiene</a> and <a href="docs/safety-and-trust.md">safety</a> nearby when you touch keys or git.</li>
     </ol>
+    <p>Later, when the industry moves: <code>python3 scripts/update-kit.py</code> — you do not need a new download of the whole kit.</p>
 
     <h2>What’s updated</h2>
     <p>Latest: <strong>1.0.0</strong> (21 September 2026) — first public kit + catalog v1.</p>

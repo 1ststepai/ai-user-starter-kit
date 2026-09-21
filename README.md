@@ -21,23 +21,25 @@ You do not need prior jargon. Where we use a term (`diff`, `agent`, `tokens`), t
 
 ## Living kit
 
-This is versioned markdown we update as tools and models change — not a one-shot PDF that goes stale.
+The guides stay readable markdown. The **tool map** updates itself from a published catalog — not a PDF you wait on, and not a changelog you have to remember.
 
-Each major guide has a **Last reviewed** date. Brand names are examples as of that month, not a forever endorsement list.
+Categories and dated brand examples live in [`data/catalog.json`](data/catalog.json). When that file changes on `main`, one command (below) pulls it onto your clone and refreshes the starter map.
 
-If a tool name looks wrong, [open an issue](https://github.com/1ststepai/ai-user-starter-kit/issues) or a small PR. See [What’s updated](docs/CHANGELOG.md).
+Each major guide also shows a **Last reviewed** date. If a name looks wrong, [open an issue](https://github.com/1ststepai/ai-user-starter-kit/issues) or a small PR.
 
 ## Keep it current
-
-Tool categories and dated examples live in [`data/catalog.json`](data/catalog.json). When 1stStep publishes a newer catalog on `main`, pull it with one command (Python 3, no packages):
 
 ```bash
 python3 scripts/update-kit.py
 ```
 
-That fetches only this repo’s GitHub raw catalog, overwrites the local file if `version` / `updatedAt` is newer, refreshes the example table in the starter map, and prints what changed.
+Python 3 only. No packages. No account.
 
-**Publish path for 1stStep:** edit `data/catalog.json` on `main`, bump `version` and `updatedAt`, run `python3 scripts/update-kit.py --local`, add a line to `docs/CHANGELOG.md`. Anyone who runs the command later gets the new map. Future: richer sources. v1 does not scrape vendor docs.
+That fetches this repo’s catalog from GitHub raw (`main`), overwrites local `data/catalog.json` if remote `version` / `updatedAt` is newer, rewrites the example table in the starter map, and prints what changed. It will not call any other host.
+
+You will know it worked when the command prints the remote version and either `Updated data/catalog.json` or `No newer catalog; keeping local`.
+
+**Publish path for 1stStep:** when tools or models change, edit `data/catalog.json` on `main`, bump `version` and `updatedAt`, run `python3 scripts/update-kit.py --local`, add a line to [docs/CHANGELOG.md](docs/CHANGELOG.md). Everyone who runs the command later gets the new map. That is the automatic loop. Future: richer sources. v1 does not scrape vendor docs.
 
 A lightweight reminder for agents lives in [`skills/keep-kit-current/SKILL.md`](skills/keep-kit-current/SKILL.md).
 
@@ -53,6 +55,8 @@ This kit is not a product pitch, a course, or a reason to hire anyone. It is a m
 2. Create a throwaway folder. Tell the AI that folder is the only place it may edit.
 3. Follow [day 1](docs/first-week-playbook.md) — a “hello” you can open without the AI.
 4. Keep [hygiene](docs/usage-hygiene.md) and [safety](docs/safety-and-trust.md) nearby when you touch keys or git.
+
+Later, when the industry moves: `python3 scripts/update-kit.py` — you do not need a new download of the whole kit.
 
 ## What’s updated
 
