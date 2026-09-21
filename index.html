@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI User Starter Kit — 1stStep.ai</title>
+  <meta name="description" content="Free first-week guide for people who just started coding with AI. Pick one tool, ship one small project, stay in control.">
+  <style>
+    :root {
+      --ink: #1c1917;
+      --muted: #57534e;
+      --paper: #faf7f2;
+      --card: #fffdf8;
+      --line: #e7e0d6;
+      --accent: #0f766e;
+      --accent-ink: #134e4a;
+    }
+    * { box-sizing: border-box; }
+    html { font-size: 18px; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+      font-family: "Iowan Old Style", "Palatino Linotype", Palatino, "Times New Roman", serif;
+      line-height: 1.55;
+    }
+    main {
+      max-width: 40rem;
+      margin: 0 auto;
+      padding: 2.5rem 1.25rem 4rem;
+    }
+    h1 {
+      font-size: 2rem;
+      line-height: 1.2;
+      margin: 0 0 1rem;
+    }
+    h2 {
+      font-size: 1.25rem;
+      margin: 2.25rem 0 0.75rem;
+    }
+    h3 {
+      font-size: 1.05rem;
+      margin: 0 0 0.5rem;
+    }
+    p, li { margin: 0 0 0.85rem; }
+    ol, ul { padding-left: 1.2rem; }
+    a { color: var(--accent-ink); }
+    a:hover { color: var(--accent); }
+    .lede { font-size: 1.05rem; }
+    .byline { color: var(--muted); }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 1rem 1.1rem 0.25rem;
+      margin: 1.25rem 0;
+    }
+    footer {
+      margin-top: 2.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+    code {
+      font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+      font-size: 0.9em;
+      background: #efe8dc;
+      padding: 0.1em 0.35em;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>AI User Starter Kit</h1>
+    <p class="lede">A free first-week guide for people who just started coding with AI.</p>
+    <p>Pick one tool. Ship one small project. Learn the habits that keep you safe and in control.</p>
+    <p>No signup. No sales call. Read it in a sitting, use it for a week.</p>
+    <p class="byline">Built by <a href="https://1ststep.ai">1stStep.ai</a>.</p>
+
+    <h2>What’s inside</h2>
+    <p>Four short pages. Read them in order, or jump to the one you need.</p>
+    <ol>
+      <li><strong><a href="docs/starter-map.md">Starter map</a></strong> — chat vs IDE agent vs terminal agent vs image, in plain English. Pick one primary tool and learn it for a week.</li>
+      <li><strong><a href="docs/first-week-playbook.md">First-week playbook</a></strong> — one small project, better prompts, when to read the diff, when to restart the chat.</li>
+      <li><strong><a href="docs/usage-hygiene.md">Usage hygiene</a></strong> — tokens and cost without the scare story; secrets; production; verify before you commit.</li>
+      <li><strong><a href="docs/safety-and-trust.md">Safety and trust</a></strong> — models invent things; never paste API keys; review changes; treat output as a draft.</li>
+    </ol>
+    <p>You do not need prior jargon. Where we use a term (<code>diff</code>, <code>agent</code>, <code>tokens</code>), the page defines it once.</p>
+
+    <h2>Who this is for</h2>
+    <p>You installed Cursor, Claude Code, Codex, ChatGPT, Gemini, or something like them, and you want a calm first week — not a feed of “must-use” extensions.</p>
+    <p>This kit is not a product pitch, a course, or a reason to hire anyone. It is a map and a practice loop.</p>
+
+    <h2>How to start (10 minutes)</h2>
+    <ol>
+      <li>Open the <a href="docs/starter-map.md">starter map</a> and choose <strong>one</strong> tool you already have.</li>
+      <li>Create a throwaway folder. Tell the AI that folder is the only place it may edit.</li>
+      <li>Follow <a href="docs/first-week-playbook.md">day 1</a> — a “hello” you can open without the AI.</li>
+      <li>Keep <a href="docs/usage-hygiene.md">hygiene</a> and <a href="docs/safety-and-trust.md">safety</a> nearby when you touch keys or git.</li>
+    </ol>
+
+    <h2>GitHub Pages</h2>
+    <p>This repo is ready to publish as static docs.</p>
+    <p>In the repository <strong>Settings → Pages</strong>, set <strong>Source</strong> to <strong>Deploy from a branch</strong>, folder <strong><code>/docs</code></strong>. GitHub will build the Markdown with the Cayman theme listed in <code>docs/_config.yml</code>.</p>
+    <p>This page is a tiny HTML mirror of the README if you later serve the repo root instead. Prefer the rendered guides on GitHub or Pages once that is on.</p>
+
+    <h2>License</h2>
+    <p><a href="LICENSE">MIT</a>. Use it, copy it, and share it.</p>
+    <p>Fixes and clarifications are welcome — see <a href="CONTRIBUTING.md">CONTRIBUTING.md</a>.</p>
+
+    <div class="card">
+      <h3>Optional: CodeFriends</h3>
+      <p>If you want company while you learn — not a class, not a paywall — <a href="https://github.com/1ststepai/codefriends">CodeFriends</a> is a small, optional community for people figuring this out together.</p>
+      <p>The live invite URL may be added later. Until then, that repo is the placeholder. You do not need to join to use this kit.</p>
+      <p>1stStep.ai builds this kit and hosts the community invite.</p>
+    </div>
+
+    <div class="card">
+      <h3>Optional: Auto Model Router</h3>
+      <p>Skip this until week one is done.</p>
+      <p>If you later start optimizing spend across Cursor, Claude Code, Codex, and similar tools, <a href="https://github.com/1ststepai/auto-model-router">Auto Model Router</a> is an open, confirm-before-run routing skill. It does not replace Cursor Auto, and we do not claim it beats any vendor picker.</p>
+    </div>
+
+    <footer>
+      <p><a href="https://github.com/1ststepai/ai-user-starter-kit">github.com/1ststepai/ai-user-starter-kit</a> · MIT · Built by <a href="https://1ststep.ai">1stStep.ai</a></p>
+    </footer>
+  </main>
+</body>
+</html>
