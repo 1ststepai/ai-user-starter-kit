@@ -17,6 +17,8 @@ Four short pages. Read them in order, or jump to the one you need.
 3. **[Usage hygiene](docs/usage-hygiene.md)** — tokens and cost without the scare story; secrets; production; verify before you commit.
 4. **[Safety and trust](docs/safety-and-trust.md)** — models invent things; never paste API keys; review changes; treat output as a draft.
 
+Then four copy-paste skills in [`skills/`](skills/README.md): **skill-maker**, **file-organizer**, **weekly-brief**, **geo-block**.
+
 You do not need prior jargon. Where we use a term (`diff`, `agent`, `tokens`), the page defines it once.
 
 ## Living kit
@@ -55,12 +57,13 @@ This kit is not a product pitch, a course, or a reason to hire anyone. It is a m
 2. Create a throwaway folder. Tell the AI that folder is the only place it may edit.
 3. Follow [day 1](docs/first-week-playbook.md) — a “hello” you can open without the AI.
 4. Keep [hygiene](docs/usage-hygiene.md) and [safety](docs/safety-and-trust.md) nearby when you touch keys or git.
+5. Optional: copy one skill from [`skills/`](skills/README.md) and run it once.
 
 Later, when the industry moves: `python3 scripts/update-kit.py` — you do not need a new download of the whole kit.
 
 ## What’s updated
 
-Latest: **1.0.0** (21 September 2026) — first public kit + catalog v1.
+Latest: **1.1.0** (22 September 2026) — first-week skill pack.
 
 Full list: [docs/CHANGELOG.md](docs/CHANGELOG.md).
 
@@ -85,6 +88,8 @@ Fixes and clarifications are welcome — see [CONTRIBUTING.md](CONTRIBUTING.md).
 If you want company while you learn — not a class, not a paywall — [CodeFriends](https://github.com/1ststepai/codefriends) is a small, optional community for people figuring this out together.
 
 What people ask there is the feedback loop that keeps this kit honest: questions in → catalog and guides update. You do not need to join to use the kit.
+
+How the kit, CodeFriends, and Auto Model Router fit without turning week one into a funnel: [docs/how-this-fits.md](docs/how-this-fits.md).
 
 The live invite URL may be added later. Until then, that repo is the placeholder.
 
