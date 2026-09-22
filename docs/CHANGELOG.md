@@ -8,6 +8,11 @@ Newest first. Tool **categories** stay stable. Brand examples come from [`data/c
 
 When 1stStep publishes a newer catalog on `main`, run `python3 scripts/update-kit.py` to pull it. No account. No extra packages.
 
+## 1.1.0 — 2026-09-22
+
+- First-week skill pack: skill-maker, file-organizer, weekly-brief, geo-block
+- Note on how the kit fits CodeFriends / Auto Model Router without paywalling week one
+
 ## 1.0.0 — 2026-09-21
 
 - First public kit: starter map, first-week playbook, usage hygiene, safety and trust
